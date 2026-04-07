@@ -25,10 +25,19 @@
         .btn svg{width:15px;height:15px;opacity:.7}
         .meta{margin-top:14px;font-size:11px;color:#aaa}
         .line{width:100%;height:1px;background:linear-gradient(90deg,transparent,rgba(0,0,0,.06),transparent)}
-        .demo{width:100%;max-width:340px;margin:20px auto 50px;padding:24px;background:rgba(0,0,0,.03);border-radius:12px;border:1px solid rgba(0,0,0,.04);text-align:center}
-        .demo .before{text-decoration:line-through;color:#bbb;font-size:12px;margin-bottom:8px}
-        .demo .arrow{color:#c06830;font-size:20px;margin:8px 0}
-        .demo .after{color:#4a3f34;font-size:13px}
+        /* Mockup */
+        .mockup{width:100%;max-width:260px;margin:20px auto 50px}
+        .mock-bar{background:#1a1a1a;border-radius:10px;padding:16px 18px;box-shadow:0 16px 50px rgba(0,0,0,.15);border:1px solid rgba(0,0,0,.08)}
+        .mock-hdr{display:flex;align-items:center;gap:8px;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,.06)}
+        .mock-hdr .ico{font-size:18px}
+        .mock-hdr span{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;color:#e0d5c8}
+        .mock-toggle{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+        .mock-toggle span{font-size:11px;color:#888;font-family:'IBM Plex Mono',monospace}
+        .mock-switch{width:36px;height:20px;background:#d2783c;border-radius:10px;position:relative}
+        .mock-switch::after{content:'';position:absolute;right:3px;top:3px;width:14px;height:14px;background:#fff;border-radius:50%}
+        .mock-stat{display:flex;justify-content:space-between;padding:8px 0;border-top:1px solid rgba(255,255,255,.05)}
+        .mock-stat span{font-size:10px;color:#555;font-family:'IBM Plex Mono',monospace}
+        .mock-stat .num{color:#d2783c;font-weight:600}
         .about{width:100%;padding:44px 0;text-align:center}
         .about p{font-size:12px;color:#999;line-height:1.8;max-width:400px;margin:0 auto}
         footer{width:100%;padding:36px 0;text-align:center}
@@ -46,15 +55,18 @@
             <a href="https://github.com/rijo-george/plain-paste/releases/latest" class="btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>Download for Mac</a>
             <p class="meta">macOS 14+ &middot; universal &middot; free</p>
         </section>
-        <div class="demo">
-            <div class="before"><b>Bold</b> <i>italic</i> <u>underline</u> colored sized text</div>
-            <div class="arrow">&#8595;</div>
-            <div class="after">plain text</div>
-        </div>
+        <section class="mockup">
+            <div class="mock-bar">
+                <div class="mock-hdr"><span class="ico">&#128203;</span><span>Plain Paste</span></div>
+                <div class="mock-toggle"><span>Strip formatting</span><div class="mock-switch"></div></div>
+                <div class="mock-stat"><span>Session</span><span class="num">47 pastes cleaned</span></div>
+                <div class="mock-stat"><span>Lifetime</span><span class="num">12,841</span></div>
+            </div>
+        </section>
         <div class="line"></div>
         <section class="about"><p>Menu bar toggle. Tracks how many pastes cleaned. No account, no tracking, no internet.</p></section>
         <div class="line"></div>
-        <footer><p>made by <a href="https://github.com/rijo-george">rijo</a> &middot; <a href="https://github.com/rijo-george/plain-paste">source</a> &middot; 2026</p></footer>
+        <footer><p>made by <a href="https://github.com/rijo-george">rijo</a> &middot; <a href="https://github.com/rijo-george/plain-paste">github</a> &middot; 2026</p></footer>
     </div>
 </body>
 </html>
